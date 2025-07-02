@@ -4,9 +4,10 @@
 	
 <div align="center">
 
-[![42 School](https://img.shields.io/badge/42-School-blue)](https://42.fr/en/homepage/)
-[![Bonus](https://img.shields.io/badge/Bonus-Complete-brightgreen)](https://github.com/baderelg/Get_next_line) \
-  <img src="https://i.imgur.com/HTci8UV.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - Jun 3rd 2025">
+[![42 School](https://img.shields.io/badge/Paris-blue?logo=42&logoColor=fff)](https://42.fr/en/homepage/)
+[![Bonus](https://img.shields.io/badge/✔️_Bonus-5cb85c)](https://github.com/baderelg/Get_next_line) \
+<img src="https://i.imgur.com/HTci8UV.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - Jun 3rd 2025"> \
+[![Validation date](https://img.shields.io/date/1748959200?label=&style=for-the-badge&color=5cb85c)](https://github.com/baderelg/Get_next_line)
 
 </div>
 
@@ -14,10 +15,10 @@
 > <details>
 > <summary><strong>What is 42?</strong></summary>
 >   
-> > [42 School](https://42.fr/en/homepage/) is a coding school that throws the traditional rulebook out the window. It’s all about peer-to-peer learning and being project-driven. \
-> > You learn by doing, tackling programming projects, and collaborating with fellow students to solve problems and evaluate each other's work. \
-> > You are given a project, a set of rules and objectives, and then it's up to you to figure out how to achieve the goal. \
-> > It really pushes you to learn how to learn. It's intense, challenging, but also very rewarding.
+> > [42 School](https://42.fr/en/homepage/) is a coding school focused on peer to peer learning and being project driven. \
+> > We are given a project, a set of rules and clear objectives, and then it's up to us to figure out how to achieve the goal. \
+> > It pushes to learn how to learn. It may be intense and sometimes frustrating but the sense of accomplishment makes everything worth it. \
+> > Short term comfort is thus sacrificed for long term growth and versatility.
 > </details>
 > 
 > <details>
@@ -47,7 +48,7 @@
 > <summary><strong>Why ?</strong></summary>
 > 
 > > Embodying a character while tackling a project isn't just entertaining, it forges stronger connections with the logic and makes it way more engaging.</br>
-> > When you try expressing what you just learned with the voice and mimics of a fictional character, it helps cementing the newly acquired knowledge and even adds new perspectives.</br>
+> > When you try expressing what you just learned with the voice of a fictional character, it helps cementing the newly acquired knowledge and even adds new perspectives.</br>
 > > I chose to take on GNL through the cynical eyes of Watchmen's Rorschach.
 > </details>
 > <details>
