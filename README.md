@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://i.imgur.com/KozlVrn.png" width="150" alt="GNL Badge With Bonus">
+  <img src="img/project-assets/badge.png" width="150" alt="GNL Badge With Bonus">
 </p>
 	
 <div align="center">
 
 [![42 School](https://img.shields.io/badge/Paris-blue?logo=42&logoColor=fff)](https://42.fr/en/homepage/)
 [![Bonus](https://img.shields.io/badge/✔️_Bonus-5cb85c)](https://github.com/baderelg/Get_next_line) \
-<img src="https://i.imgur.com/HTci8UV.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - Jun 3rd 2025"> \
+<img src="img/project-assets/score.png" width="100" alt="Validation confirmation on the 42 Intra @baelgadi - Jun 3rd 2025"> \
 [![Validation date](https://img.shields.io/date/1748959200?label=&style=for-the-badge&color=5cb85c)](https://github.com/baderelg/Get_next_line)
 
 </div>
@@ -15,27 +15,28 @@
 > <details>
 > <summary><strong>What is 42?</strong></summary>
 >   
-> > [42 School](https://42.fr/en/homepage/) is a coding school focused on peer to peer learning and being project driven. \
-> > We are given a project, a set of rules and clear objectives, and then it's up to us to figure out how to achieve the goal. \
-> > It pushes to learn how to learn. It may be intense and sometimes frustrating but the sense of accomplishment makes everything worth it. \
-> > Short term comfort is thus sacrificed for long term growth and versatility.
+> > [42 School](https://42.fr/en/homepage/) is a coding school focused on peer to peer learning and being project driven.\
+> > We are given a project, a set of rules and clear objectives, and then it's up to us to figure out how to achieve the goal.\
+> > It pushes you to learn how to learn. It may be intense and sometimes frustrating but the sense of accomplishment makes everything worth it.\
+> > Short term comfort is sacrificed for long term growth and versatility.
 > </details>
 > 
 > <details>
 > <summary><strong>What is GNL?</strong></summary>
 > 
-> > `get_next_line` (GNL) is one of the classic early projects at 42. The goal is simple:
-> > - Create a function that, when called, reads a line from a text file (or any other file descriptor).
+> > `get_next_line` (GNL) is one of the classic early projects at 42. The goal is simple:\
+> > Create a function that, when called, reads a line from a text file (or any other file descriptor)
 > > 
-> > The Bonus part adds a bit of complexity, like managing multiple file descriptors simultaneously with a single static variable.</br>
-> > It's a deep dive into memory management, file input/output and string manipulation under strict coding constraints.
+> > The Bonus part adds a bit of complexity, like managing multiple file descriptors simultaneously with a single static variable\
+> > It's a solid exercise in memory management, file I/O and string manipulation under strict coding constraints
 > > 
 > > <b>📏 Norminette</b></br>
 > > The Norm is a set of coding rules used in all 42 projects: 
 > > ```markdown
 > > - No more than 25 lines per function
 > > - No more than 5 function definitions per file
-> > - No ternary operators, no variable declarations after the first line of a function
+> > - No ternary operators
+> > - Variable declarations must be at the top of the function
 > > - No for loops
 > > - Function and file names must follow snake_case
 > > - and many other rules...
@@ -45,36 +46,36 @@
 > To make the journey entertaining, I chose to approach the project through the eyes and voice of a fictional character.
 > 
 > <details>
-> <summary><strong>Why ?</strong></summary>
-> 
-> > Embodying a character while tackling a project isn't just entertaining, it forges stronger connections with the logic and makes it way more engaging.</br>
-> > When you try expressing what you just learned with the voice of a fictional character, it helps cementing the newly acquired knowledge and even adds new perspectives.</br>
-> > I chose to take on GNL through the cynical eyes of Watchmen's Rorschach.
+> <summary><strong>Why?</strong></summary>
+>
+> > First and foremost, to avoid boredom. And while this started as just a weird habit, I quickly found it effective at keeping me engaged in the projects.\
+> > Embodying a character while tackling any exercise forges stronger connections with the logic and makes it truly engaging.\
+> Sometimes, it even gives me new perspectives. Who would have thunk?
+> >
 > </details>
 > <details>
 > <summary><strong>Why Rorschach?</strong></summary>
 > 
-> > Get Next Line is a byte by byte interrogation of data.</br>
-> > It demands an obsessive level of attention and focus to isolate the lines from partial read, unpredictable buffer sizes and EOF.</br>
-> > Rorschach, with his attention to detail and his absolute refusal to compromise embodies the spirit GNL requires.</br>
-> > So who better to stare into the abyss and extract exactly one line, no more, no less?</br>
+> > Get Next Line is a byte by byte interrogation of data.\
+> > It demands an obsessive level of attention and focus to isolate the lines from partial read, unpredictable buffer sizes and EOF.\
+> > Rorschach, with his attention to detail and his absolute refusal to compromise embodies the spirit GNL requires.\
+> > So who better to stare into the abyss and extract exactly one line, no more, no less?
 > </details>
 
 ---
 
-
 <p align="center">
-  <img src="https://i.imgur.com/6f9zDWU.png" alt="Rorschach">
+  <img src="img/project-assets/banner.png" alt="Rorschach">
 </p>
 
-> 📓 **Rorschach’s journal.** \
+> **Rorschach’s journal.** \
 > The city bleeds data. Memory is a crime scene. \
 > They call it "Get Next Line". A simple name for a dirty job.\
 > My job is to read between the lines, examine every byte.
 > One line at a time. No assumptions.\
 > Just the truth dragged out of the file descriptor, screaming.
 
-# 🕵️ Assignment: Interrogation of a file descriptor
+# <img src="img/icons/0.png" height="35" alt="Icon"> Assignment: Interrogation of a file descriptor
 
 You think reading from a file is simple? That data spills neatly into memory like poetry?
 
@@ -88,7 +89,7 @@ char *get_next_line(int fd);
 ```
 And its purpose is simple. Read a line from a given file descriptor (`fd`).
 
-<b><ins>What constitutes a "line"?</b></ins>
+<b><ins>What constitutes a "line"?</ins></b>
 
 A sequence of characters that concludes with a newline character <b>\n</b>, if one even exists.</br>
 The function must return this extracted line.</br>
@@ -102,7 +103,7 @@ If the end of the file `EOF` is reached and no more characters can be read, or i
 > - Handle multiple file descriptors at once, keeping each one's testimony straight even when switching between them with consecutive calls.
 > - Using the discipline of only one single static variable.
 
-## 🛡️ Restrictions: Rules of the city
+## <img src="img/icons/1.png" height="30" alt="Icon"> Restrictions: Rules of the city
 
 ### ➢ The Norm
 > The city has rules. Here is the cage they built.
@@ -133,21 +134,21 @@ If the end of the file `EOF` is reached and no more characters can be read, or i
 >   - Reading binary files.
 >   - Modifying file content between calls.
 
-## 📦 Submission: Required evidence
+## <img src="img/icons/2.png" height="30" alt="Icon"> Submission: Required evidence
 
-* [`get_next_line.c`](https://github.com/baderelg/Get_next_line/blob/main/get_next_line.c)
+* [`get_next_line.c`](./get_next_line.c)
   the heart of the operation. It handles all the logic to read the fd line by line.
-* [`get_next_line_utils.c`](https://github.com/baderelg/Get_next_line/blob/main/get_next_line_utils.c)
+* [`get_next_line_utils.c`](./get_next_line_utils.c)
   a utility belt that holds custom implementations from Libft[^1] or new helper functions.\
    (This project recodes and adapts the functions `strjoin`, `strlen`, `substr` and `strchr` but feel free to use your own)
-* [`get_next_line.h`](https://github.com/baderelg/Get_next_line/blob/main/get_next_line.h)
+* [`get_next_line.h`](./get_next_line.h)
   the manifest. It declares everything. The function prototypes. The `BUFFER_SIZE` macro. The `t_fdnode` structure.
 
 
 
-# 🕵️ Modus Operandi
+# <img src="img/icons/0.png" height="35" alt="Icon"> Modus Operandi
 
-> 📓 **Rorschach’s journal.** \
+> **Rorschach’s journal.** \
 > Truth hides. Buried in bytes, wrapped in logic.\
 > Reading is just the beginning. Understanding takes method.\
 > They call it logic. They call it discipline.\
@@ -159,7 +160,7 @@ Sometimes I jump right to the end of the story `EOF`. Sometimes I get a chunk.\
 That chunk might contain less than a full line, multiple lines or exactly one line with a bit of luck.\
 But I don't deal in luck.
 
-## 🧱 Foundations: 
+## <img src="img/icons/3.png" height="30" alt="Icon"> Foundations: 
 
 > What's one more body amongst foundations?
 
@@ -177,7 +178,8 @@ Every `fd` gets its own `stash` storing unread fragments, waiting for the next c
 
 ### ➢ 🔗 Linked list
 
-The linked list is a chain of structures, where each structure (a "node") contains the data for one item and a pointer to the next node in the chain. It can grow or shrink as needed, perfect for managing an unknown number of file descriptors.
+A chain of nodes. Each one holds data and a pointer to the next. It grows when needed, shrinks when it's done. No wasted space.\
+Perfect for tracking an unknown number of file descriptors.
   
   ```c
   typedef struct s_fdnode {
@@ -193,6 +195,10 @@ The linked list is a chain of structures, where each structure (a "node") contai
 
 This ensures that each `fd` has its own separate stash.
 
+<p align="center">
+<img src="img/resources/diagram1.png" alt="D1">
+</p>
+
 > [!TIP]
 > The `static t_fdnode *fd_list` always points to the first node in this chain.
 > When a call to `get_next_line()` happens, a helper function (`get_fdnode()`) is called to:
@@ -202,15 +208,15 @@ This ensures that each `fd` has its own separate stash.
 ### ➢ The Stash
 
 The `char *stash` inside each node is where the real dirty work happens for each file descriptor.\
-When `read_file()` <sup>[(get_next_line.c)](https://github.com/baderelg/Get_next_line/blob/main/get_next_line.c)</sup> calls `read()`, the data obtained from the file descriptor is appended to this stash, saved until we know what it means.
+When `read_file()` <sup>[(get_next_line.c)](./get_next_line.c)</sup> calls `read()`, the data obtained from the file descriptor is appended to this stash, saved until we know what it means.
 - If `read()` pulls half a line? It sits there waiting for more.
 - If `read()` pulls three lines, the first is processed and the other two (or even any partial fourth) remain in the stash.
 
 The `stash` is a persistent buffer tied to a specific `fd` via its node.\
 It's constantly being manipulated.
 - `ftg_strjoin` is used to append newly read data. This custom version is designed to allocate new memory for the combined string and free the old stash that it was given as an argument, to avoid any leaks.
-- `extract_line` <sup>[(get_next_line.c)](https://github.com/baderelg/Get_next_line/blob/main/get_next_line.c)</sup> uses `ftg_substr` and reads from the stash to find the end of the current line (be it \n or EOF) and allocates memory for it to be returned.
-- `update_stash` <sup>[(get_next_line.c)](https://github.com/baderelg/Get_next_line/blob/main/get_next_line.c)</sup> then takes the original `stash`, removes the line that was just extracted and returns a **newly allocated string** containing only what remains. The old stash is freed, and if there is no remainder then the functions returns `NULL` signifying that the stash is now empty.
+- `extract_line` <sup>[(get_next_line.c)](./get_next_line.c)</sup> uses `ftg_substr` and reads from the stash to find the end of the current line (be it \n or EOF) and allocates memory for it to be returned.
+- `update_stash` <sup>[(get_next_line.c)](./get_next_line.c)</sup> then takes the original `stash`, removes the line that was just extracted and returns a **newly allocated string** containing only what remains. The old stash is freed, and if there is no remainder then the functions returns `NULL` signifying that the stash is now empty.
 
 > Read.\
 > Append.\
@@ -219,85 +225,38 @@ It's constantly being manipulated.
 > Good job. No Data is lost.\
 > Roll on snare drum. Curtains.
 
+<p align="center">
+<img src="img/resources/diagram2.png" width="400" alt="D2">
+</p>
 
-## ⛓❓ The Interrogation chamber: Functions at work
+## <img src="img/icons/4.png" height="30" alt="Icon"> The Interrogation chamber: Functions at work
 
-> 📓 **Rorschach’s journal.** \
+> **Rorschach’s journal.** \
 > I have mapped the antechambers.\
 > The static memories, the linked chains of evidence, the festering stash where raw data waits.\
 > Now, the door to the interrogation chamber itself.
 
-In addition to LIBFT[^2] helper functions, several functions conspire to execute this city's twisted strategy.
+Five functions. Each one has a role, a method, a reason to exist.\
+Libft[^2] helpers handle the string work. These handle the investigation.
 
-<details>
-<summary><strong>🧭 get_fdnode</strong></summary>
+<p align="center">
+<img src="img/resources/diagram3.png" width="400" alt="D3">
+</p>
 
-```c
-t_fdnode *get_fdnode(t_fdnode **list, int fd)
-```
-> The Navigator
+`get_fdnode` is the navigator that walks the chain looking for a node matching the given `fd`. If it finds one, it returns it. If not, it builds a new one and shoves it at the front of the list.\
+If `malloc` refuses, there's nothing to return.
 
-* Finds an existing `t_fdnode` for `fd` in the `fd_list` and mallocs a new one, initializing it and adding it to the list.
+`read_file` is where the interrogation happens. It sits in a loop calling `read()` and appending to the stash until either a `\n` shows up or EOF finally puts an end to it.\
+If `read()` fails, everything gets freed. No evidence left behind.
 
-➡️ Return `NULL` on allocation failure.
-<br><br>
-</details>
+`extract_line` is the analyst. It scans the stash for the first `\n`, carves everything up to AND including it into a new string via `ftg_substr` and hands it back.\
+The stash stays untouched. That's not its crime scene to clean.
 
-<details>
-<summary><strong>📊 extract_line</strong></summary>
+`update_stash` is the cleaner. It throws away what was just extracted and keeps whatever is left. If there's nothing left, it frees the stash and returns `NULL`.\
+The old stash dies here no matter what. No loose ends.
 
-```c
-char *extract_line(char *stash)
-```
-> The Analyst
-
-* Scans the `stash` for the first complete line and uses custom `substr` to create a separate, null-terminated string for this line.
-
-➡️ The new string is what `get_next_line` will eventually return. It must include the `\n` unless it's EOF (and no newline exists).
-<br><br>
-</details>
-
-<details>
-<summary><strong>♻️ update_stash</strong></summary>
-
-```c
-char *update_stash(char *stash)
-```
-> The Cleaner
-
-* Takes the `stash` from which a line was just extracted and returns only what remains after that extracted line. Frees the old stash.
-
-➡️ If no character remains or if the line extracted consumed the entire stash, it returns `NULL`.
-<br><br>
-</details>
-
-<details>
-<summary><strong>🔁 read_file</strong></summary>
-
-```c
-char *read_file(int fd, char *stash)
-```
-> The Legwork
-
-* Calls `read()` in a loop, appending data to `stash` each time using custom `strjoin` until a `\n` is found or `read()` signals EOF or an error.
-
-➡️ This is where the *"read as little data as possible"* principle is key, as the loop stops as soon as it must.
-<br><br>
-</details>
-
-<details>
-<summary><strong>⚰️ free_fdnode</strong></summary>
-
-```c
-void free_fdnode(t_fdnode **list, int fd)
-```
-> The Undertaker
-
-* When an `fd`'s operations are truly complete (EOF reached and its stash is empty, or unexpected error occurs), this function removes the corresponding `t_fdnode` from the `fd_list` freeing its `stash` and the node itself.
-
-➡️ This is absolutely crucial for preventing memory leaks. NEVER compromise.
-<br><br>
-</details>
+`free_fdnode` is the undertaker. When an `fd` has nothing left to confess, this function pulls its node out of the linked list and buries it. Stash first, node second.\
+That order matters: once the node is gone, so is the pointer to the stash.
 
 > Every malloc is a deal. A promise.\
 > The stash, the lines we return, the t_fdnode structs, the temporary buffers in read_file(), all of them are debts.\
@@ -305,8 +264,7 @@ void free_fdnode(t_fdnode **list, int fd)
 > Leaks aren't bugs. They're negligence.\
 > And in this city, negligence is a cardinal sin.
 
-
-# 🕵️ Lurking dangers: Edge cases & Points of failure
+# <img src="img/icons/0.png" height="35" alt="Icon"> Lurking dangers: Edge cases & Points of failure
 
 > So you think you've tamed it? Dragged a few lines from the digital sewer?\
 > The city always has more to trip you, to watch you bleed.
@@ -314,9 +272,9 @@ void free_fdnode(t_fdnode **list, int fd)
 
 The path of `get_next_line` is littered with traps.
 
-## 💥 Memory, the lingering stain
+## <img src="img/icons/5.png" height="30" alt="Icon"> Memory, the lingering stain
 
-Like roaches<sub>(👋 Paul)</sub> memory leaks multiply in the dark corners of sloppy code.</br>
+Like roaches, memory leaks multiply in the dark corners of sloppy code.</br>
 
 ### ➢ **The `stash`**
 - This buffer of leftovers is prime real estate for leaks.
@@ -324,7 +282,7 @@ Like roaches<sub>(👋 Paul)</sub> memory leaks multiply in the dark corners of 
 - When a file descriptor's tale is told (EOF & stash empty) or an error makes its testimony worthless, its entire node (including the stash) must be purged.
 
 ### ➢ **The returned `line`**
-- Each `get_next_line` hands a fresh allocated line.
+- Each `get_next_line` call returns a freshly allocated line.
 - The caller, the one who asked for the line bears the burden of freeing it.
 
 ### ➢ **Node structures (`t_fdnode`)**
@@ -332,7 +290,7 @@ Like roaches<sub>(👋 Paul)</sub> memory leaks multiply in the dark corners of 
 - These too must be hunted down and freed by the Undertaker function when their purpose ends.
 - Every `malloc` is a promise and `free` must keep it. Break too many and the program drowns in its own undeclared waste.  
 
-## 🔪 BUFFER_SIZE, the double-edged blade
+## <img src="img/icons/6.png" height="30" alt="Icon"> BUFFER_SIZE, the double-edged blade
 
 > BUFFER_SIZE will destroy us all
 
@@ -358,13 +316,12 @@ Like roaches<sub>(👋 Paul)</sub> memory leaks multiply in the dark corners of 
 - Fewer `read` calls, true. But the `stash` might suddenly hold entire novels.
 - Can the string functions handle these colossal strings efficiently?
 - Can `malloc` grant such a large temporary buffer for `read()` without choking on itself?
-- The answer lies in robust memory handling and efficient string operations.
+- If the implementation handles memory properly and the string operations don't choke, it will survive.
+- A **default value** must be defined, for what happens if none is provided by the caller?
 
-- **Default value**
-- A default value must be defined for what happens if none is provided by the caller?
-- It's not about right or wrong. It's about what is.
+It's not about right or wrong. It's about what is.
 
-## 📣 Files descriptors, the corrupted informants
+## <img src="img/icons/7.png" height="30" alt="Icon"> File descriptors, the corrupted informants
 
 > Tonight, a file descriptor died in New York.
 
@@ -392,7 +349,7 @@ It might point to the truth, to a lie or even straight to an empty void.
 		</br>Read from the read end of the pipe (pipefd[0]) using get_next_line.
 	</details>
 
-## 🏔️ Files content variations, a treacherous terrain
+## <img src="img/icons/8.png" height="30" alt="Icon"> Files content variations, a treacherous terrain
 
 Never assume the data stream is clean.\
 It's often a pure reflection of this city: messy and unpredictable.
@@ -417,7 +374,7 @@ It's often a pure reflection of this city: messy and unpredictable.
 - Lines can be short or monstrously long.
 - The `stash` must grow to accommodate them.    
 
-## 🏙️ System failures, when the city crumbles
+## <img src="img/icons/9.png" height="30" alt="Icon"> System failures, when the city crumbles
 
 > Evil doesn't die. It just changes faces.
 
@@ -435,9 +392,9 @@ It's often a pure reflection of this city: messy and unpredictable.
 
 ---
 
-## Final Word
+## The End is Nigh
 
-> 📓 **Rorschach’s journal.** \
+> **Rorschach’s journal.** \
 > "And the file will look up and shout "ONE LAST LINE!"… and I’ll look down and whisper "No.”"
 
 This file is afraid of me. I have seen its true face.
@@ -456,6 +413,6 @@ Never compromise. Not even in the face of Segfault.
 <sub><a href="https://github.com/ayogun/42-project-badges/blob/main/LICENSE">See full license here</a></sub>
 </p>
 
-[^1]: Libft is the first project of the common core at 42. [My version explained by Ted Lasso is right here!](https://github.com/baderelg/Libft/tree/main) The project prohibits linking a compiled libft.a but allows recoding its functions.
+[^1]: Libft is the first project of the common core at 42. [My version explained by Ted Lasso is right here!](https://github.com/baderelg/Libft/) The project prohibits linking a compiled libft.a but allows recoding its functions.
 [^2]: Functions `strlen` `strchr` `substr` and `strjoin` are taken from the Libft Project (with a slight modification for GNL)
 [^3]: [Check over here for information on the pipe() system call](https://www.geeksforgeeks.org/pipe-system-call/)
